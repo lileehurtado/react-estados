@@ -1,11 +1,13 @@
-function Alert ({ alertMsg, alertCase}) {
-    return (
-        <div>
-            <div className={`alert-${alertCase}`}>
-                {alertMsg}
-            </div>
-        </div>
-    );
-  };
-  
-  export default Alert;
+import React from 'react'
+
+function Alert({errormsg, status}) {
+  return (
+    <>
+      <div className={status}>
+        {errormsg}
+      </div>
+    </>
+  )
+}
+
+export default Alert;
